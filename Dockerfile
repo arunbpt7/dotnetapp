@@ -16,7 +16,7 @@ FROM microsoft/dotnet:aspnetcore-runtime
 ENV http_proxy=http://sunproxy.ux.hra.nycnet:3128
 ENV https_proxy=http://sunproxy.ux.hra.nycnet:3128
 WORKDIR /app
-COPY --from=build-env /app/out .
+COPY  /app/out .
 COPY sources.list /etc/apt/sources.list
 RUN apt-get update -y 
 RUN apt-get install apt-utils -y 
