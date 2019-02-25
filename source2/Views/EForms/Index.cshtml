@@ -1,0 +1,31 @@
+@model IEnumerable<PDFTestCore.Models.Ll30Forms>
+
+@{
+    ViewBag.Title = "EForms";
+}
+
+<h2>Ll30Snippets</h2>
+
+<!-- <p>
+    <a asp-controller="EForms" asp-action="Create">Create New</a>
+</p> -->
+
+
+<table class="table">
+    <tr>
+        <th>Form Id</th>
+        <th>Form Number</th>       
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FormId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FormNumber)
+            </td>                     
+        </tr>
+    }
+</table>

@@ -1,0 +1,617 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML xmlns:xsf="http://schemas.microsoft.com/office/infopath/2003/solutionDefinition" 
+xmlns:xdserverinfo="http://schemas.microsoft.com/office/infopath/2009/xslt/ServerInfo" 
+xmlns:xduser="http://schemas.microsoft.com/office/infopath/2006/xslt/User" 
+xmlns:xdenvironment="http://schemas.microsoft.com/office/infopath/2006/xslt/environment" 
+xmlns:ipapp="http://schemas.microsoft.com/office/infopath/2006/XPathExtension/ipApp" 
+xmlns:xdsignatureproperties="http://schemas.microsoft.com/office/infopath/2003/SignatureProperties" 
+xmlns:sig="http://www.w3.org/2000/09/xmldsig#" xmlns:xddate="http://schemas.microsoft.com/office/infopath/2003/xslt/Date" 
+xmlns:xdmath="http://schemas.microsoft.com/office/infopath/2003/xslt/Math" 
+xmlns:xdutil="http://schemas.microsoft.com/office/infopath/2003/xslt/Util" 
+xmlns:xdimage="http://schemas.microsoft.com/office/infopath/2003/xslt/xImage" 
+xmlns:xdformatting="http://schemas.microsoft.com/office/infopath/2003/xslt/formatting" 
+xmlns:xdsolution="http://schemas.microsoft.com/office/infopath/2003/xslt/solution" 
+xmlns:xdxdocument="http://schemas.microsoft.com/office/infopath/2003/xslt/xDocument" 
+xmlns:xdextension="http://schemas.microsoft.com/office/infopath/2003/xslt/extension" 
+xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns:msxsl="urn:schemas-microsoft-com:xslt" 
+xmlns:my="http://schemas.microsoft.com/office/infopath/2003/myXSD/2017-06-01T13:04:06" 
+xmlns:st="urn:schemas-microsoft-com:office:smarttags" xmlns:v="urn:schemas-microsoft-com:vml" 
+xmlns:aml="http://schemas.microsoft.com/aml/2001/core" xmlns:xd="http://schemas.microsoft.com/office/infopath/2003" 
+xmlns:wx="http://schemas.microsoft.com/office/word/2003/auxHint" xmlns:w10="urn:schemas-microsoft-com:office:word" 
+xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:w="http://schemas.microsoft.com/office/word/2003/wordml"><HEAD><META 
+content="IE=5.0000" http-equiv="X-UA-Compatible">
+
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<STYLE controlstyle="controlStyle">@media screen 			{ 			BODY{margin-left:21px;background-position:21px 0px;} 			} 		BODY{color:windowtext;background-color:window;layout-grid:none;} 		.xdListItem {display:inline-block;width:100%;vertical-align:text-top;} 		.xdListBox,.xdComboBox{margin:1px;} 		.xdInlinePicture{margin:1px; BEHAVIOR: url(#default#urn::xdPicture) } 		.xdLinkedPicture{margin:1px; BEHAVIOR: url(#default#urn::xdPicture) url(#default#urn::controls/Binder) } 		.xdHyperlinkBox{word-wrap:break-word; text-overflow:ellipsis;overflow-x:hidden; OVERFLOW-Y: hidden; WHITE-SPACE:nowrap; display:inline-block;margin:1px;padding:5px;border: 1pt solid #dcdcdc;color:windowtext;BEHAVIOR: url(#default#urn::controls/Binder) url(#default#DataBindingUI)} 		.xdSection{border:1pt solid transparent ;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;} 		.xdRepeatingSection{border:1pt solid transparent;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px;} 		.xdMultiSelectList{margin:1px;display:inline-block; border:1pt solid #dcdcdc; padding:1px 1px 1px 5px; text-indent:0; color:windowtext; background-color:window; overflow:auto; behavior: url(#default#DataBindingUI) url(#default#urn::controls/Binder) url(#default#MultiSelectHelper) url(#default#ScrollableRegion);} 		.xdMultiSelectListItem{display:block;white-space:nowrap}		.xdMultiSelectFillIn{display:inline-block;white-space:nowrap;text-overflow:ellipsis;;padding:1px;margin:1px;border: 1pt solid #dcdcdc;overflow:hidden;text-align:left;}		.xdBehavior_Formatting {BEHAVIOR: url(#default#urn::controls/Binder) url(#default#Formatting);} 	 .xdBehavior_FormattingNoBUI{BEHAVIOR: url(#default#CalPopup) url(#default#urn::controls/Binder) url(#default#Formatting);} 	.xdExpressionBox{margin: 1px;padding:1px;word-wrap: break-word;text-overflow: ellipsis;overflow-x:hidden;}.xdBehavior_GhostedText,.xdBehavior_GhostedTextNoBUI{BEHAVIOR: url(#default#urn::controls/Binder) url(#default#TextField) url(#default#GhostedText);}	.xdBehavior_GTFormatting{BEHAVIOR: url(#default#urn::controls/Binder) url(#default#Formatting) url(#default#GhostedText);}	.xdBehavior_GTFormattingNoBUI{BEHAVIOR: url(#default#CalPopup) url(#default#urn::controls/Binder) url(#default#Formatting) url(#default#GhostedText);}	.xdBehavior_Boolean{BEHAVIOR: url(#default#urn::controls/Binder) url(#default#BooleanHelper);}	.xdBehavior_Select{BEHAVIOR: url(#default#urn::controls/Binder) url(#default#SelectHelper);}	.xdBehavior_ComboBox{BEHAVIOR: url(#default#ComboBox)} 	.xdBehavior_ComboBoxTextField{BEHAVIOR: url(#default#ComboBoxTextField);} 	.xdRepeatingTable{BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none; BORDER-COLLAPSE: collapse; WORD-WRAP: break-word;}.xdScrollableRegion{BEHAVIOR: url(#default#ScrollableRegion);} 		.xdLayoutRegion{display:inline-block;} 		.xdMaster{BEHAVIOR: url(#default#MasterHelper);} 		.xdActiveX{margin:1px; BEHAVIOR: url(#default#ActiveX);} 		.xdFileAttachment{display:inline-block;margin:1px;BEHAVIOR:url(#default#urn::xdFileAttachment);} 		.xdSharePointFileAttachment{display:inline-block;margin:2px;BEHAVIOR:url(#default#xdSharePointFileAttachment);} 		.xdAttachItem{display:inline-block;width:100%%;height:25px;margin:1px;BEHAVIOR:url(#default#xdSharePointFileAttachItem);} 		.xdSignatureLine{display:inline-block;margin:1px;background-color:transparent;border:1pt solid transparent;BEHAVIOR:url(#default#SignatureLine);} 		.xdHyperlinkBoxClickable{behavior: url(#default#HyperlinkBox)} 		.xdHyperlinkBoxButtonClickable{border-width:1px;border-style:outset;behavior: url(#default#HyperlinkBoxButton)} 		.xdPictureButton{background-color: transparent; padding: 0px; behavior: url(#default#PictureButton);} 		.xdPageBreak{display: none;}BODY{margin-right:21px;} 		.xdTextBoxRTL{display:inline-block;white-space:nowrap;text-overflow:ellipsis;;padding:1px;margin:1px;border: 1pt solid #dcdcdc;color:windowtext;background-color:window;overflow:hidden;text-align:right;word-wrap:normal;} 		.xdRichTextBoxRTL{display:inline-block;;padding:1px;margin:1px;border: 1pt solid #dcdcdc;color:windowtext;background-color:window;overflow-x:hidden;word-wrap:break-word;text-overflow:ellipsis;text-align:right;font-weight:normal;font-style:normal;text-decoration:none;vertical-align:baseline;} 		.xdDTTextRTL{height:100%;width:100%;margin-left:22px;overflow:hidden;padding:0px;white-space:nowrap;} 		.xdDTButtonRTL{margin-right:-21px;height:17px;width:20px;behavior: url(#default#DTPicker);} 		.xdMultiSelectFillinRTL{display:inline-block;white-space:nowrap;text-overflow:ellipsis;;padding:1px;margin:1px;border: 1pt solid #dcdcdc;overflow:hidden;text-align:right;}.xdTextBox{display:inline-block;white-space:nowrap;text-overflow:ellipsis;;padding:1px;margin:1px;border: 1pt solid #dcdcdc;color:windowtext;background-color:window;overflow:hidden;text-align:left;word-wrap:normal;} 		.xdRichTextBox{display:inline-block;;padding:1px;margin:1px;border: 1pt solid #dcdcdc;color:windowtext;background-color:window;overflow-x:hidden;word-wrap:break-word;text-overflow:ellipsis;text-align:left;font-weight:normal;font-style:normal;text-decoration:none;vertical-align:baseline;} 		.xdDTPicker{;display:inline;margin:1px;margin-bottom: 2px;border: 1pt solid #dcdcdc;color:windowtext;background-color:window;overflow:hidden;text-indent:0; layout-grid: none} 		.xdDTText{height:100%;width:100%;margin-right:22px;overflow:hidden;padding:0px;white-space:nowrap;} 		.xdDTButton{margin-left:-21px;height:17px;width:20px;behavior: url(#default#DTPicker);} 		.xdRepeatingTable TD {VERTICAL-ALIGN: top;}</STYLE>
+
+<STYLE tableeditor="TableStyleRulesID">TABLE.xdLayout TD {
+	BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; BORDER-LEFT: medium none
+}
+TABLE.msoUcTable TD {
+	BORDER-TOP: 1pt solid; BORDER-RIGHT: 1pt solid; BORDER-BOTTOM: 1pt solid; BORDER-LEFT: 1pt solid
+}
+TABLE {
+	BEHAVIOR: url (#default#urn::tables/NDTable)
+}
+</STYLE>
+
+<STYLE languagestyle="languageStyle">BODY {
+	FONT-SIZE: 10pt; FONT-FAMILY: Calibri
+}
+SELECT {
+	FONT-SIZE: 10pt; FONT-FAMILY: Calibri
+}
+TABLE {
+	FONT-SIZE: 10pt; FONT-FAMILY: Calibri; TEXT-TRANSFORM: none; FONT-WEIGHT: normal; COLOR: black; FONT-STYLE: normal
+}
+.optionalPlaceholder {
+	FONT-SIZE: 9pt; TEXT-DECORATION: none; FONT-FAMILY: Calibri; FONT-WEIGHT: normal; COLOR: #333333; FONT-STYLE: normal; PADDING-LEFT: 20px; BEHAVIOR: url(#default#xOptional)
+}
+.langFont {
+	FONT-SIZE: 10pt; FONT-FAMILY: Calibri; WIDTH: 150px
+}
+.defaultInDocUI {
+	FONT-SIZE: 9pt; FONT-FAMILY: Calibri
+}
+.optionalPlaceholder {
+	PADDING-RIGHT: 20px
+}
+</STYLE>
+
+<STYLE themestyle="urn:office.microsoft.com:themeSummer">TABLE {
+	BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-COLLAPSE: collapse; BORDER-BOTTOM: medium none; BORDER-LEFT: medium none
+}
+TD {
+	BORDER-TOP-COLOR: #d8d8d8; BORDER-LEFT-COLOR: #d8d8d8; BORDER-BOTTOM-COLOR: #d8d8d8; BORDER-RIGHT-COLOR: #d8d8d8
+}
+TH {
+	BORDER-TOP-COLOR: #000000; BORDER-LEFT-COLOR: #000000; COLOR: black; BORDER-BOTTOM-COLOR: #000000; BORDER-RIGHT-COLOR: #000000; BACKGROUND-COLOR: #f2f2f2
+}
+.xdTableHeader {
+	COLOR: black; BACKGROUND-COLOR: #f2f2f2
+}
+.light1 {
+	BACKGROUND-COLOR: #ffffff
+}
+.dark1 {
+	BACKGROUND-COLOR: #000000
+}
+.light2 {
+	BACKGROUND-COLOR: #f7f8f4
+}
+.dark2 {
+	BACKGROUND-COLOR: #2b4b4d
+}
+.accent1 {
+	BACKGROUND-COLOR: #6c9a7f
+}
+.accent2 {
+	BACKGROUND-COLOR: #bb523d
+}
+.accent3 {
+	BACKGROUND-COLOR: #c89d11
+}
+.accent4 {
+	BACKGROUND-COLOR: #fccf10
+}
+.accent5 {
+	BACKGROUND-COLOR: #568ea1
+}
+.accent6 {
+	BACKGROUND-COLOR: #decf28
+}
+
+</STYLE>
+
+<META name="GENERATOR" content="MSHTML 11.00.9600.18792"></HEAD>
+<BODY>
+<DIV align="left">
+<TABLE class="xdLayout" bordercolor="buttontext" style="border: currentColor; width: 523.5pt; border-collapse: collapse; table-layout: fixed; -ms-word-wrap: break-word;" 
+border="1">
+  <COLGROUP>
+  <COL style="width: 15px;">
+  <COL style="width: 74px;">
+  <COL style="width: 15px;">
+  <COL style="width: 122px;">
+  <COL style="width: 72px;">
+  <COL style="width: 51px;">
+  <COL style="width: 85px;">
+  <COL style="width: 18px;">
+  <COL style="width: 12px;">
+  <COL style="width: 48px;">
+  <COL style="width: 30px;">
+  <COL style="width: 7px;">
+  <COL style="width: 107px;">
+  <COL style="width: 42px;"></COLGROUP>
+  <TBODY valign="top">
+  <TR style="min-height: 5.4pt;">
+    <TD style="padding-right: 1.45pt; padding-left: 1.45pt;" colspan="14">
+      <DIV align="right"><FONT face="Times New Roman"><FONT style="font-size: 8pt;">BEV-100 
+      </FONT><FONT style="font-size: 8pt;"></FONT><FONT 
+      style="font-size: 8pt;">(E) 12</FONT><FONT 
+      style="font-size: 8pt;">/</FONT><FONT 
+      style="font-size: 8pt;">17</FONT><FONT 
+      style="font-size: 8pt;">/2014</FONT></FONT></DIV>
+      <DIV align="right"><FONT face="Times New Roman"><FONT style="font-size: 8pt;">Revised 
+      </FONT><FONT style="font-size: 8pt;">0</FONT><FONT 
+      style="font-size: 8pt;">5/</FONT><FONT 
+      style="font-size: 8pt;">31</FONT><FONT 
+      style="font-size: 8pt;">/2017</FONT></FONT></DIV></TD></TR>
+  <TR style="min-height: 45.15pt;">
+    <TD colspan="14">
+      <DIV style="margin-bottom: 12pt;"><FONT face="Times New Roman"><FONT 
+      style="font-size: 12pt;"><IMG title="" style="width: 267pt; height: 32.25pt; float: none;" 
+      src="BEV-100E_files/02000001.jpg"></FONT></FONT></DIV></TD></TR>
+  <TR style="min-height: 36pt;">
+    <TD colspan="14">
+      <DIV>
+      <DIV style="text-indent: 0pt; padding-left: 0pt;"><FONT face="Times New Roman" 
+      style="font-size: 11pt;"><STRONG>INVESTIGATION, REVENUE AND ENFORCEMENT 
+      ADMINISTRATION </STRONG></FONT></DIV>
+      <DIV style="text-indent: 0pt; padding-left: 0pt;"><FONT face="Times New Roman" 
+      style="font-size: 11pt;"><STRONG>BUREAU OF ELIGIBILITY VERIFICATION 
+      </STRONG></FONT></DIV></DIV>
+      <DIV></DIV></TD></TR>
+  <TR style="min-height: 45.6pt;">
+    <TD style="vertical-align: middle;" colspan="14">
+      <DIV align="center" style="margin-top: 12pt; margin-bottom: 12pt;"><FONT 
+      face="Times New Roman"><FONT style="font-size: 12pt;"><STRONG>NOTICE 
+      </STRONG></FONT><FONT style="font-size: 12pt;"><STRONG>OF 
+      </STRONG></FONT><FONT style="font-size: 12pt;"><STRONG>REAL PROPERTY 
+      OWNERSHIP APPOINTMENT</STRONG></FONT><FONT 
+      style="font-size: 12pt;"><STRONG><BR>REFERRAL TO BUREAU OF ELIGIBILITY 
+      VERIFICATION</STRONG></FONT><FONT style="font-size: 12pt;"><STRONG> 
+      (BEV)</STRONG></FONT></FONT></DIV></TD></TR>
+  <TR style="min-height: 22.5pt;">
+    <TD style="vertical-align: bottom;" colspan="2">
+      <DIV align="left" style="margin-top: 6pt;"><FONT face="Times New Roman" 
+      style="font-size: 12pt;">Job Center:</FONT></DIV></TD>
+    <TD style="border-bottom-color: rgb(0, 0, 0); border-bottom-width: 1pt; border-bottom-style: none;" 
+    colspan="2">
+      <DIV style="margin-top: 6pt;"><SPAN tabindex="0" title="" class="xdTextBox" 
+      style="border-width: 1pt; border-style: none none solid; border-color: rgb(0, 0, 0); width: 100%; height: 17px; padding-bottom: 0px; font-family: Arial; font-size: 9pt; font-weight: bold; margin-bottom: -4pt;" 
+      hidefocus="1" xd:binding="my:Job_Center" xd:xctname="plaintext" xd:ctrlid="CTRL3"></SPAN></DIV></TD>
+    <TD style="vertical-align: bottom; border-bottom-color: rgb(0, 0, 0); border-bottom-width: 1pt; border-bottom-style: none;">
+      <DIV align="right" style="margin-top: 6pt;"><FONT face="Times New Roman" 
+      style="font-size: 12pt;">Caseload:</FONT></DIV></TD>
+    <TD style="border-bottom-color: rgb(0, 0, 0); border-bottom-width: 1pt; border-bottom-style: none;" 
+    colspan="2">
+      <DIV style="margin-top: 6pt;"><SPAN tabindex="0" title="" class="xdTextBox" 
+      style="border-width: 1pt; border-style: none none solid; border-color: rgb(0, 0, 0); width: 100%; height: 17px; padding-bottom: 0px; font-family: Arial; font-size: 9pt; font-weight: bold; margin-bottom: -4pt;" 
+      hidefocus="1" xd:binding="my:Caseload" xd:xctname="plaintext" xd:ctrlid="CTRL5"></SPAN></DIV></TD>
+    <TD>
+      <DIV style="margin-top: 6pt;"><FONT face="Times New Roman" style="font-size: 12pt;">&nbsp;&nbsp;</FONT></DIV></TD>
+    <TD style="vertical-align: bottom;" colspan="2">
+      <DIV align="left" style="margin-top: 6pt;"><FONT face="Times New Roman" 
+      style="font-size: 12pt;">Date:</FONT></DIV></TD>
+    <TD colspan="4">
+      <DIV style="margin-top: 6pt;"><SPAN tabindex="0" title="" class="xdTextBox" 
+      style="border-width: 1pt; border-style: none none solid; border-color: rgb(0, 0, 0); width: 100%; height: 17px; padding-bottom: 0px; font-family: Arial; font-size: 9pt; font-weight: bold; margin-bottom: -4pt;" 
+      hidefocus="1" xd:binding="my:Doc_Date" xd:xctname="plaintext" xd:ctrlid="CTRL7"></SPAN></DIV></TD></TR>
+  <TR style="min-height: 21pt;">
+    <TD style="padding: 1px 1.45pt 1px 1pt; vertical-align: bottom;" 
+colspan="2">
+      <DIV align="left" style="margin-top: 6pt;"><FONT face="Times New Roman" 
+      style="font-size: 12pt;">Case Type:</FONT></DIV></TD>
+    <TD style="border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 1pt; border-bottom-width: 1pt; border-top-style: none; border-bottom-style: none;" 
+    colspan="5">
+      <DIV style="margin-top: 6pt;"><SPAN tabindex="0" title="" class="xdTextBox" 
+      style="border-width: 1pt; border-style: none none solid; border-color: rgb(0, 0, 0); width: 100%; height: 17px; font-family: Arial; font-size: 9pt; font-weight: bold;" 
+      hidefocus="1" xd:binding="my:Case_Type" xd:xctname="plaintext" xd:ctrlid="CTRL9"></SPAN></DIV></TD>
+    <TD style="padding-right: 2.9pt; padding-left: 2.9pt;">
+      <DIV style="margin-top: 6pt;"><FONT face="Times New Roman" style="font-size: 12pt;">&nbsp;&nbsp;</FONT></DIV></TD>
+    <TD style="padding-right: 1.45pt; padding-left: 1.45pt; vertical-align: bottom;" 
+    colspan="2">
+      <DIV align="left" style="margin-top: 6pt;"><FONT 
+      face="Times New Roman"><FONT style="font-size: 12pt;"></FONT></FONT><FONT 
+      face="Times New Roman" style="font-size: 12pt;">Suffix:</FONT></DIV></TD>
+    <TD colspan="4">
+      <DIV style="margin-top: 6pt;"><SPAN tabindex="0" title="" class="xdTextBox" 
+      style="border-width: 1pt; border-style: none none solid; border-color: rgb(0, 0, 0); width: 100%; height: 17px; font-family: Arial; font-size: 9pt; font-weight: bold;" 
+      hidefocus="1" xd:binding="my:Suffix1" xd:xctname="plaintext" xd:ctrlid="CTRL11"></SPAN></DIV></TD></TR>
+  <TR style="min-height: 11.25pt;">
+    <TD style="padding: 1px 1.45pt 1px 1pt; vertical-align: bottom;" 
+colspan="2">
+      <DIV align="left" style="margin-top: 6pt;"><FONT face="Times New Roman" 
+      style="font-size: 12pt;">Case Name:</FONT></DIV></TD>
+    <TD style="border-top-color: rgb(0, 0, 0); border-top-width: 1pt; border-top-style: none;" 
+    colspan="5">
+      <DIV style="margin-top: 6pt;"><SPAN tabindex="0" title="" class="xdTextBox" 
+      style="border-width: 1pt; border-style: none none solid; border-color: rgb(0, 0, 0); width: 100%; height: 17px; font-family: Arial; font-size: 9pt; font-weight: bold;" 
+      hidefocus="1" xd:binding="my:Case_Name1" xd:xctname="plaintext" xd:ctrlid="CTRL13"></SPAN></DIV></TD>
+    <TD style="padding-right: 2.9pt; padding-left: 2.9pt;">
+      <DIV style="margin-top: 6pt;"><FONT face="Times New Roman" style="font-size: 12pt;">&nbsp;&nbsp;</FONT></DIV></TD>
+    <TD style="padding-right: 1.45pt; padding-left: 1.45pt; vertical-align: bottom;" 
+    colspan="4">
+      <DIV align="left" style="margin-top: 6pt;"><FONT 
+      face="Times New Roman"><FONT style="font-size: 12pt;"></FONT></FONT><FONT 
+      face="Times New Roman" style="font-size: 12pt;">Case 
+    Number:</FONT></DIV></TD>
+    <TD colspan="2">
+      <DIV style="margin-top: 6pt;"><SPAN tabindex="0" title="" class="xdTextBox" 
+      style="border-width: 1pt; border-style: none none solid; border-color: rgb(0, 0, 0); width: 100%; height: 17px; padding-bottom: 0px; font-family: Arial; font-size: 9pt; font-weight: bold; margin-bottom: 0px;" 
+      hidefocus="1" xd:binding="my:Case_Num1" xd:xctname="plaintext" xd:ctrlid="CTRL15"></SPAN></DIV></TD></TR>
+  <TR style="min-height: 32.25pt;">
+    <TD colspan="14">
+      <DIV style="text-indent: 0pt; padding-right: 7.2pt; margin-top: 6pt; margin-bottom: 12pt;"><FONT 
+      face="Arial"><FONT face="Times New Roman" 
+      style="font-size: 12pt;">For</FONT><FONT face="Times New Roman" style="font-size: 12pt;"> 
+      your application</FONT><FONT face="Times New Roman" style="font-size: 12pt;"> 
+      for cash assistance</FONT><FONT face="Times New Roman" style="font-size: 12pt;">, 
+      the Bureau of Eligibility </FONT><FONT face="Times New Roman" style="font-size: 12pt;"></FONT><FONT 
+      face="Times New Roman" style="font-size: 12pt;">Verification’s Real 
+      Property and Asset Unit</FONT><FONT face="Times New Roman" style="font-size: 12pt;"> 
+      must </FONT><FONT face="Times New Roman" style="font-size: 12pt;">review 
+      certain documents related to property</FONT><FONT face="Times New Roman" 
+      style="font-size: 12pt;"> you own</FONT><FONT face="Times New Roman" 
+      style="font-size: 12pt;">.</FONT></FONT></DIV>
+      <DIV style="margin-bottom: 9pt;"><FONT face="Arial"><FONT face="Times New Roman" 
+      style="font-size: 12pt;">Under the </FONT><FONT face="Times New Roman" 
+      style="font-size: 12pt;"></FONT><FONT face="Times New Roman" style="font-size: 12pt;">New 
+      York State Social Services Law, Sections 106 and 360, </FONT><FONT face="Times New Roman" 
+      style="font-size: 12pt;">HRA </FONT><FONT face="Times New Roman" style="font-size: 12pt;">must</FONT><FONT 
+      face="Times New Roman" style="font-size: 12pt;"> place a Bond and Mortgage 
+      on your property, or </FONT><FONT face="Times New Roman" style="font-size: 12pt;">if</FONT><FONT 
+      face="Times New Roman" style="font-size: 12pt;"> your property is a co-op 
+      apartment, file a Uniform Commercial Code lien (UCC-1). 
+      &nbsp;</FONT></FONT></DIV>
+      <DIV style="margin-top: 3px; margin-bottom: 18pt;"><FONT 
+      face="Arial"><FONT face="Times New Roman" 
+      style="font-size: 12pt;">T</FONT><FONT face="Times New Roman" style="font-size: 12pt;">o 
+      complete this process</FONT><FONT face="Times New Roman" style="font-size: 12pt;">, 
+      </FONT><FONT face="Times New Roman" style="font-size: 12pt;"></FONT><FONT 
+      face="Times New Roman" style="font-size: 12pt;"><STRONG><U>you must come 
+      to the BEV Real Property and Asset Unit for an 
+      interview</U></STRONG></FONT><FONT face="Times New Roman" style="font-size: 12pt;">.&nbsp;&nbsp; 
+      </FONT></FONT><FONT face="Arial"><FONT face="Times New Roman" style="font-size: 12pt;">If 
+      you are not the owner of the property</FONT><FONT face="Times New Roman" 
+      style="font-size: 12pt;">,</FONT><FONT face="Times New Roman" style="font-size: 12pt;"> 
+      you </FONT><FONT face="Times New Roman" 
+      style="font-size: 12pt;">can</FONT><FONT face="Times New Roman" style="font-size: 12pt;"> 
+      explain this at the interview.</FONT></FONT></DIV></TD></TR>
+  <TR style="min-height: 36.75pt;">
+    <TD style="vertical-align: middle; border-bottom-color: rgb(0, 0, 0); border-bottom-width: 1pt; border-bottom-style: none;" 
+    colspan="6">
+      <DIV align="right" style="margin-top: 9pt;"><FONT 
+      face="Times New Roman"><FONT style="font-size: 12pt;">A </FONT><FONT 
+      style="font-size: 12pt;"><STRONG>MANDATORY</STRONG></FONT><FONT style="font-size: 12pt;"> 
+      interview has been scheduled</FONT><FONT style="font-size: 12pt;"> 
+      for</FONT><FONT style="font-size: 12pt;">:</FONT></FONT></DIV></TD>
+    <TD style="padding: 1px; vertical-align: middle; border-bottom-color: rgb(0, 0, 0); border-bottom-width: 1pt; border-bottom-style: solid;" 
+    colspan="8">
+      <DIV align="left" style="margin-top: 9pt;"><SPAN tabindex="0" title="" 
+      class="xdTextBox" style="border-width: 1pt; border-style: none none solid; border-color: rgb(220, 220, 220) rgb(220, 220, 220) rgb(0, 0, 0); width: 100%; height: 17px; font-family: Arial; font-size: 9pt; font-weight: bold;" 
+      hidefocus="1" xd:binding="my:Case_Name2" xd:xctname="plaintext" xd:ctrlid="CTRL17"></SPAN></DIV></TD></TR>
+  <TR style="min-height: 38.25pt;">
+    <TD style="border-width: 1pt; border-style: none solid none none; border-color: rgb(0, 0, 0); padding-right: 1px; vertical-align: middle;" 
+    rowspan="2">
+      <DIV align="right" style="margin-top: 6pt; margin-bottom: 6pt;"><FONT 
+      face="Times New Roman" style="font-size: 12pt;">&nbsp; </FONT></DIV></TD>
+    <TD style="border-width: 1pt; border-style: solid none solid solid; border-color: rgb(0, 0, 0); vertical-align: middle;" 
+    colspan="2">
+      <DIV align="right" style="margin-top: 6pt; margin-bottom: 6pt;"><FONT 
+      face="Times New Roman" style="font-size: 12pt;">&nbsp; At:</FONT></DIV></TD>
+    <TD style="border-width: 1pt; border-style: solid none; border-color: rgb(0, 0, 0); vertical-align: middle;" 
+    colspan="6">
+      <DIV align="left" style="margin-top: 6pt; margin-bottom: 6pt;"><SPAN 
+      tabindex="0" title="" class="xdTextBox" style="border-width: 1pt; border-style: none none solid; border-color: rgb(220, 220, 220) rgb(220, 220, 220) rgb(0, 0, 0); width: 356px; height: 17px; font-family: Arial; font-size: 9pt; font-weight: bold; white-space: normal; -ms-overflow-x: visible; -ms-overflow-y: visible; -ms-word-wrap: break-word;" 
+      contenteditable="true" hidefocus="1" xd:binding="my:Bev_Address1" 
+      xd:xctname="PlainText" xd:ctrlid="CTRL1"></SPAN></DIV></TD>
+    <TD style="border-width: 1pt; border-style: solid none; border-color: rgb(0, 0, 0); vertical-align: middle;" 
+    colspan="2">
+      <DIV align="right" style="margin-top: 6pt; margin-bottom: 6pt;"><FONT 
+      face="Times New Roman" style="font-size: 12pt;">Floor:</FONT></DIV></TD>
+    <TD style="border-width: 1pt; border-style: solid none; border-color: rgb(0, 0, 0); vertical-align: middle;" 
+    colspan="2">
+      <DIV align="left" style="margin-top: 6pt; margin-bottom: 6pt;"><SPAN 
+      tabindex="0" title="" class="xdTextBox" style="border-width: 1pt; border-style: none none solid; border-color: rgb(0, 0, 0); width: 100%; height: 17px; font-family: Arial; font-size: 9pt; font-weight: bold;" 
+      hidefocus="1" xd:binding="my:Floor" xd:xctname="plaintext" xd:ctrlid="CTRL20"></SPAN></DIV></TD>
+    <TD style="border-width: 1pt; border-style: solid solid solid none; border-color: rgb(0, 0, 0);">
+      <DIV style="margin-top: 6pt; margin-bottom: 6pt;"><FONT face="Times New Roman" 
+      style="font-size: 6pt;">&nbsp;&nbsp;</FONT></DIV>
+      <DIV style="margin-top: 6pt; margin-bottom: 6pt;"><FONT face="Times New Roman" 
+      size="1"></FONT>&nbsp;</DIV></TD></TR>
+  <TR style="min-height: 39pt;">
+    <TD style="border-width: 1pt; border-style: solid none solid solid; border-color: rgb(0, 0, 0); vertical-align: middle;" 
+    colspan="2">
+      <DIV align="right" style="margin-top: 6pt; margin-bottom: 6pt;"><IMG 
+      style="width: 17px; height: 19px;" 
+      src="BEV-100E_files/235FAB52.gif">&nbsp; <FONT face="Times New Roman" 
+      style="font-size: 12pt;">Date:</FONT></DIV></TD>
+    <TD style="border-width: 1pt; border-style: solid none; border-color: rgb(0, 0, 0); vertical-align: middle;" 
+    colspan="6">
+      <DIV align="left" style="margin-top: 6pt; margin-bottom: 6pt;"><SPAN 
+      tabindex="0" title="" class="xdTextBox" style="border-width: 1pt; border-style: none none solid; border-color: rgb(220, 220, 220) rgb(220, 220, 220) rgb(0, 0, 0); width: 189px; height: 17px; font-family: Arial; font-size: 9pt; font-weight: bold;" 
+      hidefocus="1" xd:binding="my:Appt_Date" xd:xctname="plaintext" xd:ctrlid="CTRL22"></SPAN></DIV></TD>
+    <TD style="border-width: 1pt; border-style: solid none; border-color: rgb(0, 0, 0); vertical-align: middle;" 
+    colspan="2">
+      <DIV align="right" style="margin-top: 6pt; margin-bottom: 6pt;"><FONT 
+      face="Times New Roman"><FONT style="font-size: 12pt;"></FONT></FONT><FONT 
+      face="Times New Roman"><FONT style="font-size: 12pt;">&nbsp; <IMG style="width: 18px; height: 18px;" 
+      src="BEV-100E_files/DD303EA5.gif">&nbsp;Time</FONT></FONT><FONT face="Times New Roman" 
+      style="font-size: 12pt;">:</FONT></DIV></TD>
+    <TD style="border-width: 1pt; border-style: solid none; border-color: rgb(0, 0, 0); vertical-align: middle;" 
+    colspan="2">
+      <DIV align="left" style="margin-top: 6pt; margin-bottom: 6pt;"><SPAN 
+      tabindex="0" title="" class="xdTextBox" style="border-width: 1pt; border-style: none none solid; border-color: rgb(220, 220, 220) rgb(220, 220, 220) rgb(0, 0, 0); width: 100%; height: 17px; font-family: Arial; font-size: 9pt; font-weight: bold;" 
+      hidefocus="1" xd:binding="my:Appt_Time" xd:xctname="plaintext" xd:ctrlid="CTRL24"></SPAN></DIV></TD>
+    <TD style="border-width: 1pt; border-style: solid solid solid none; border-color: rgb(0, 0, 0);">
+      <DIV style="margin-top: 6pt; margin-bottom: 6pt;"><FONT face="Times New Roman" 
+      style="font-size: 6pt;">&nbsp;&nbsp;</FONT></DIV>
+      <DIV style="margin-top: 6pt; margin-bottom: 6pt;"><FONT face="Times New Roman"></FONT>&nbsp;</DIV></TD></TR>
+  <TR style="min-height: 24.75pt;">
+    <TD style="vertical-align: bottom; border-top-color: rgb(0, 0, 0); border-top-width: 1pt; border-top-style: none;" 
+    colspan="14">
+      <DIV align="center" style="margin-top: 12pt; margin-bottom: 12pt;"><FONT 
+      face="Times New Roman"><FONT style="font-size: 12pt;"><STRONG>*** Please 
+      arrive ONLY at your scheduled time. ***</STRONG></FONT></FONT></DIV></TD></TR>
+  <TR>
+    <TD colspan="14">
+      <DIV style="margin-top: 3pt; margin-bottom: 3pt;"><FONT face="Arial"><FONT 
+      face="Times New Roman" style="font-size: 13pt;"><STRONG>You must bring 
+      documents for review such as:</STRONG></FONT></FONT></DIV>
+      <DIV style="padding-left: 50px;"><FONT face="Times New Roman"><FONT size="3"><FONT 
+      face="Symbol" style="font-size: 12pt;">·<SPAN style="width: 12pt;" 
+      unselectable="on" xd:tab="1"></SPAN></FONT>Identity (such as Birth 
+      Certificate or Baptismal <FONT 
+      style="font-size: 12pt;">Record</FONT></FONT><FONT size="4"></FONT><FONT 
+      style="font-size: 12pt;">, NYS Driver License or NYS Photo ID, 
+      </FONT></FONT></DIV>
+      <DIV style="padding-left: 72px;"><FONT face="Times New Roman"><FONT style="font-size: 12pt;">or 
+      CA Benefit Photo ID Card)</FONT></FONT></DIV>
+      <DIV style="padding-left: 50px;"><FONT face="Arial"><FONT face="Times New Roman"><FONT 
+      size="4"></FONT><FONT face="Symbol" style="font-size: 12pt;">·<SPAN style="width: 12pt;" 
+      unselectable="on" xd:tab="1"></SPAN></FONT><FONT size="4"><FONT face="Times New Roman"></FONT><FONT 
+      style="font-size: 12pt;">Original Deed to the property that is 
+      clear</FONT><FONT style="font-size: 12pt;">, </FONT><FONT style="font-size: 12pt;">legible, 
+      </FONT><FONT style="font-size: 12pt;">and complete with all attached 
+      pages</FONT></FONT></FONT></FONT></DIV>
+      <DIV style="padding-left: 50px;"><FONT face="Arial"><FONT face="Times New Roman"><FONT 
+      face="Symbol" style="font-size: 12pt;">·<SPAN style="width: 12pt;" 
+      unselectable="on" xd:tab="1"></SPAN></FONT><FONT size="4"><FONT face="Arial"></FONT><FONT 
+      face="Times New Roman" style="font-size: 12pt;">Stock (Share) Certificate 
+      or letter from <FONT size="4">you</FONT></FONT><FONT face="Times New Roman" 
+      size="4" style="font-size: 12pt;">r</FONT><FONT face="Times New Roman" 
+      style="font-size: 12pt;"> co-op board stating your ownership interest 
+      including</FONT></FONT></FONT></FONT></DIV>
+      <DIV style="padding-left: 72px;"><FONT face="Arial"><FONT face="Times New Roman"><FONT 
+      face="Arial"><FONT face="Times New Roman" style="font-size: 12pt;">how 
+      many shares you </FONT><FONT face="Times New Roman" style="font-size: 12pt;">own, 
+      if you own a co-op apartment</FONT></FONT></FONT></FONT></DIV>
+      <DIV style="padding-left: 50px;"><FONT face="Arial"><FONT face="Times New Roman"><FONT 
+      face="Symbol"><FONT size="4">·</FONT><SPAN style="width: 12pt;" 
+      unselectable="on" xd:tab="1"></SPAN></FONT><FONT face="Arial"><FONT face="Times New Roman" 
+      style="font-size: 12pt;">Utility Bill, Telephone Bill, or Tax 
+      Bill</FONT><FONT size="4"></FONT></FONT></FONT></FONT></DIV>
+      <DIV align="right" style="text-indent: -18pt; padding-left: 43.2pt; margin-bottom: 0pt;"><FONT 
+      face="Times New Roman" size="3">Page 1 of 
+2</FONT></DIV></TD></TR></TBODY></TABLE></DIV>
+<DIV align="left">
+<DIV style="page-break-after: always;" contenteditable="false"><BR><SPAN class="xdPageBreak" 
+unselectable="on"><BR></SPAN></DIV></DIV>
+<DIV>
+<TABLE class="xdLayout" bordercolor="buttontext" style="border: currentColor; width: 698px; border-collapse: collapse; table-layout: fixed; -ms-word-wrap: break-word;" 
+border="1">
+  <COLGROUP>
+  <COL style="width: 523.5pt;"></COLGROUP>
+  <TBODY valign="top">
+  <TR>
+    <TD>
+      <DIV align="right"><FONT face="Times New Roman"><FONT style="font-size: 8pt;">BEV-100 
+      </FONT><FONT style="font-size: 8pt;"></FONT><FONT 
+      style="font-size: 8pt;">(E) 12</FONT><FONT 
+      style="font-size: 8pt;">/</FONT><FONT 
+      style="font-size: 8pt;">17</FONT><FONT 
+      style="font-size: 8pt;">/2014</FONT></FONT></DIV>
+      <DIV align="right"><FONT face="Times New Roman"><FONT style="font-size: 8pt;">Revised 
+      </FONT><FONT style="font-size: 8pt;">0</FONT><FONT 
+      style="font-size: 8pt;">5/</FONT><FONT 
+      style="font-size: 8pt;">31</FONT><FONT 
+      style="font-size: 8pt;">/2017</FONT></FONT></DIV>
+      <DIV style="margin-top: 12pt; margin-bottom: 12pt;"><FONT face="Times New Roman"><FONT 
+      style="font-size: 12pt;"><U>We will not deny you</U></FONT><FONT style="font-size: 12pt;"><U> 
+      cash assistance </U></FONT><FONT style="font-size: 12pt;"></FONT><FONT 
+      style="font-size: 12pt;">because you could not</FONT><FONT style="font-size: 12pt;"> 
+      get requested documents</FONT><FONT style="font-size: 12pt;">, if 
+      </FONT><FONT style="font-size: 12pt;"></FONT><FONT style="font-size: 12pt;">we 
+      can find you eligible</FONT><FONT style="font-size: 12pt;"> based on 
+      </FONT><FONT style="font-size: 12pt;">other </FONT><FONT style="font-size: 12pt;">documents 
+      </FONT><FONT style="font-size: 12pt;">we</FONT><FONT style="font-size: 12pt;"> 
+      already ha</FONT><FONT style="font-size: 12pt;">ve</FONT><FONT style="font-size: 12pt;"> 
+      on file. HRA will </FONT><FONT style="font-size: 12pt;">help</FONT><FONT 
+      style="font-size: 12pt;"> you </FONT><FONT style="font-size: 12pt;">to get 
+      required</FONT><FONT style="font-size: 12pt;"> document</FONT><FONT style="font-size: 12pt;">s</FONT><FONT 
+      style="font-size: 12pt;"> you </FONT><FONT style="font-size: 12pt;">may 
+      need.</FONT></FONT></DIV>
+      <DIV style="margin-bottom: 12pt;"><FONT face="Times New Roman"><FONT 
+      style="font-size: 12pt;">You must comply with the</FONT><FONT style="font-size: 12pt;"> 
+      BEV Review</FONT><FONT style="font-size: 12pt;">. </FONT><FONT style="font-size: 12pt;"></FONT><FONT 
+      style="font-size: 12pt;"><U>Your application for cash assistance is not 
+      </U></FONT><FONT style="font-size: 12pt;"><U>complete if you 
+      </U></FONT><FONT style="font-size: 12pt;"><U>do not come to this 
+      appointment</U></FONT><FONT 
+      style="font-size: 12pt;"><U>.</U></FONT></FONT></DIV>
+      <DIV style="margin-bottom: 12pt;"><FONT face="Times New Roman"><FONT 
+      style="font-size: 12pt;">If you </FONT></FONT><FONT 
+      face="Times New Roman"><FONT 
+      style="font-size: 12pt;">can</FONT></FONT><FONT 
+      face="Times New Roman"><FONT 
+      style="font-size: 12pt;">no</FONT></FONT><FONT 
+      face="Times New Roman"><FONT style="font-size: 12pt;">t</FONT></FONT><FONT 
+      face="Times New Roman"><FONT style="font-size: 12pt;"> keep the BEV 
+      appointment, </FONT></FONT><FONT face="Times New Roman"><FONT style="font-size: 12pt;"><STRONG>please 
+      call BEV at </STRONG></FONT></FONT><SPAN tabindex="0" title="" class="xdTextBox" 
+      style="border: 1pt rgb(0, 0, 0); width: 115px; padding-bottom: 0px; font-family: Times New Roman; font-size: small; font-weight: bold; margin-bottom: 0px;" 
+      hidefocus="1" xd:binding="my:Phone" xd:xctname="plaintext" xd:ctrlid="CTRL4"></SPAN><FONT 
+      face="Times New Roman"><FONT 
+      style="font-size: 12pt;"><STRONG></STRONG></FONT></FONT><STRONG><FONT 
+      face="Times New Roman"><FONT style="font-size: 12pt;"><STRONG>&nbsp;before 
+      </STRONG></FONT></FONT><FONT face="Times New Roman"><FONT style="font-size: 12pt;"><STRONG>the 
+      appointment</STRONG></FONT></FONT><FONT face="Times New Roman"><FONT 
+      style="font-size: 12pt;"> to reschedule. To reschedule this appointment 
+      </FONT></FONT><FONT face="Times New Roman"><FONT 
+      style="font-size: 12pt;"><U>after the </U></FONT></FONT><FONT face="Times New Roman"><FONT 
+      style="font-size: 12pt;"><U>date</U></FONT></FONT><FONT face="Times New Roman"><FONT 
+      style="font-size: 12pt;"> of the appointment, you must contact your 
+      worker. </FONT></FONT><FONT face="Times New Roman"><FONT style="font-size: 12pt;">You 
+      must have a good reason for not attending your original appointment. You 
+      must show your worker proof of </FONT></FONT><FONT 
+      face="Times New Roman"><FONT 
+      style="font-size: 12pt;">the</FONT></FONT><FONT face="Times New Roman" 
+      style="font-size: 6pt;"><FONT style="font-size: 12pt;"> 
+      reason.</FONT></FONT></STRONG></DIV>
+      <DIV style="margin-bottom: 12pt;">
+      <TABLE class="xdLayout" bordercolor="buttontext" style="border: currentColor; width: 693px; border-collapse: collapse; table-layout: fixed; -ms-word-wrap: break-word;" 
+      border="1">
+        <COLGROUP>
+        <COL style="width: 328px;">
+        <COL style="width: 67px;">
+        <COL style="width: 298px;"></COLGROUP>
+        <TBODY valign="top">
+        <TR style="min-height: 46px;">
+          <TD style="vertical-align: bottom;">
+            <DIV align="left" style="margin-top: 12pt;"><FONT face="Times New Roman" 
+            style="font-size: 12pt;"><STRONG><IMG width="328" height="30" 
+            tabindex="0" class="xdLinkedPicture" style="border-width: 1pt; border-style: none none solid; border-color: rgb(0, 0, 0);" 
+            hidefocus="1" alt="Click here to insert a picture" src="" 
+            xd:binding="my:Sign_A1" xd:xctname="LinkedImage" xd:ctrlid="CTRL10" 
+            xd:boundprop="src" tabstop="true" 
+            displaytext=""></STRONG></FONT></DIV></TD>
+          <TD>
+            <DIV><FONT face="Times New Roman" size="2"></FONT>&nbsp;</DIV></TD>
+          <TD style="vertical-align: bottom;">
+            <DIV align="left" style="margin-top: 12pt;"><SPAN tabindex="0" 
+            title="" class="xdTextBox" style="border-width: 1pt; border-style: none none solid; border-color: rgb(0, 0, 0); width: 100%; height: 17px; font-family: Arial; font-size: 9pt; font-weight: normal;" 
+            hidefocus="1" xd:binding="my:Worker_Sgn" xd:xctname="plaintext" 
+            xd:ctrlid="CTRL8"></SPAN></DIV></TD></TR>
+        <TR style="min-height: 4px;">
+          <TD>
+            <DIV style="margin-bottom: 0pt;"><FONT face="Times New Roman"><FONT 
+            style="font-size: 12pt;">(Applicant</FONT><FONT style="font-size: 12pt;"> 
+            Signature)</FONT></FONT></DIV></TD>
+          <TD>
+            <DIV><FONT face="Times New Roman" size="2"></FONT>&nbsp;</DIV></TD>
+          <TD>
+            <DIV style="margin-bottom: 0pt;"><FONT face="Times New Roman"><FONT 
+            style="font-size: 12pt;">(Worker 
+        Signature)</FONT></FONT></DIV></TD></TR></TBODY></TABLE></DIV>
+      <DIV style="margin-bottom: 12pt;">
+      <TABLE class="xdLayout" bordercolor="buttontext" style="border: currentColor; width: 695px; border-collapse: collapse; table-layout: fixed; -ms-word-wrap: break-word;" 
+      border="1">
+        <COLGROUP>
+        <COL style="width: 695px;"></COLGROUP>
+        <TBODY valign="top">
+        <TR style="min-height: 3pt;">
+          <TD style="border: 1pt rgb(0, 0, 0);">
+            <DIV style="margin-top: 18pt; margin-bottom: 6pt;"><FONT face="Times New Roman"><FONT 
+            style="font-size: 12pt;"><STRONG>Do you have a disability or health 
+            condition that makes it hard for you to understand this notice or to 
+            do what this notice is asking? &nbsp;Does this condition make it 
+            hard for you to get other services at HRA? &nbsp;Call us at 
+            212-331-4640 </STRONG></FONT></FONT><FONT 
+            face="Times New Roman"><FONT 
+            style="font-size: 12pt;"><STRONG></STRONG></FONT></FONT><STRONG><FONT 
+            face="Times New Roman"><FONT style="font-size: 12pt;"><STRONG>and we 
+            can help you.&nbsp; You can also ask for help when you visit an HRA 
+            office.&nbsp;&nbsp;You have a right to ask for this kind of help 
+            under the 
+      law.</STRONG></FONT></FONT></STRONG></DIV></TD></TR></TBODY></TABLE></DIV>
+      <DIV style="margin-bottom: 12pt;">
+      <TABLE class="xdLayout" bordercolor="buttontext" style="border: currentColor; width: 695px; border-collapse: collapse; table-layout: fixed; -ms-word-wrap: break-word;" 
+      border="1">
+        <COLGROUP>
+        <COL style="width: 695px;"></COLGROUP>
+        <TBODY valign="top">
+        <TR style="min-height: 2.15pt;">
+          <TD style="border: 1pt solid rgb(0, 0, 0); vertical-align: middle; background-color: rgb(217, 217, 217);">
+            <DIV align="center" 
+            style="margin-top: 6pt; margin-bottom: 6px;"><FONT face="Times New Roman" 
+            style="font-size: 12pt;"><STRONG>TRAVEL 
+            INSTRUCTIONS:</STRONG></FONT></DIV></TD></TR></TBODY></TABLE></DIV>
+      <DIV style="margin-bottom: 12pt;">
+      <TABLE class="xdLayout" bordercolor="buttontext" style="border: currentColor; width: 694px; border-collapse: collapse; table-layout: fixed; -ms-word-wrap: break-word;" 
+      border="1">
+        <COLGROUP>
+        <COL style="width: 80px;">
+        <COL style="width: 614px;"></COLGROUP>
+        <TBODY valign="top">
+        <TR style="min-height: 19px;">
+          <TD style="padding-right: 1px;" colspan="2">
+            <DIV><FONT face="Calibri" size="2"><FONT 
+            face="Times New Roman"><FONT 
+            style="font-size: 12pt;"><STRONG><U>BROOKLYN</U></STRONG></FONT><FONT 
+            style="font-size: 12pt;"> &nbsp; </FONT></FONT></FONT></DIV></TD></TR>
+        <TR style="min-height: 68px;">
+          <TD>
+            <DIV style="margin-bottom: 6pt;"><FONT face="Times New Roman" style="font-size: 12pt;"><STRONG>By 
+            Train:</STRONG></FONT></DIV></TD>
+          <TD>
+            <DIV><FONT face="Arial"><FONT face="Times New Roman" style="font-size: 12pt;">A, 
+            C, G to Hoyt/Schermerhorn Street;</FONT></FONT></DIV>
+            <DIV><FONT face="Arial"><FONT face="Times New Roman" style="font-size: 12pt;">2 
+            or 3 to Hoyt Street</FONT><FONT face="Times New Roman" style="font-size: 12pt;">;</FONT></FONT></DIV>
+            <DIV><FONT face="Arial"><FONT face="Times New Roman" style="font-size: 12pt;">4 
+            or 5 to Nevins Street;</FONT></FONT></DIV>
+            <DIV style="margin-bottom: 12pt;"><FONT face="Arial"><FONT face="Times New Roman" 
+            style="font-size: 12pt;">B, N, Q, R, to DeKalb 
+            Avenue.</FONT></FONT></DIV></TD></TR>
+        <TR>
+          <TD>
+            <DIV style="margin-bottom: 12pt;"><FONT face="Times New Roman" 
+            style="font-size: 12pt;"><STRONG>By Bus:</STRONG></FONT></DIV></TD>
+          <TD>
+            <DIV><FONT face="Arial"><FONT face="Times New Roman" style="font-size: 12pt;">B26 
+            – Fulton / Bond Streets;</FONT></FONT></DIV>
+            <DIV><FONT face="Arial"><FONT face="Times New Roman" style="font-size: 12pt;">B63 
+            – Atlantic Avenue / Bond Street;</FONT></FONT></DIV>
+            <DIV><FONT face="Arial"><FONT face="Times New Roman" style="font-size: 12pt;">B65 
+            – Atlantic Avenue / Nevins Street;</FONT></FONT></DIV>
+            <DIV><FONT face="Arial"><FONT face="Times New Roman" style="font-size: 12pt;">B41, 
+            B45, B67 – Livingston / Hoyt Streets;</FONT></FONT></DIV>
+            <DIV><FONT face="Arial"><FONT face="Times New Roman" style="font-size: 12pt;">B25, 
+            B38, B52 – Fulton / Hoyt Streets.</FONT></FONT></DIV></TD></TR>
+        <TR style="min-height: 18px;">
+          <TD style="padding-right: 1px;" colspan="2">
+            <DIV style="margin-top: 0pt; margin-bottom: 0pt;"><FONT face="Times New Roman"><FONT 
+            style="font-size: 12pt;"><STRONG><U>BRONX</U></STRONG></FONT></FONT></DIV></TD></TR>
+        <TR>
+          <TD>
+            <DIV style="margin-bottom: 6pt;"><FONT face="Times New Roman" style="font-size: 12pt;"><STRONG>By 
+            Train:</STRONG></FONT></DIV></TD>
+          <TD>
+            <DIV style="margin-bottom: 6pt;"><FONT face="Arial"><FONT face="Times New Roman" 
+            style="font-size: 12pt;">6 to Hunts Point Avenue; </FONT><FONT face="Times New Roman" 
+            style="font-size: 12pt;">2 or 5 to Simpson Street.</FONT><FONT face="Times New Roman" 
+            style="font-size: 12pt;">&nbsp;</FONT></FONT></DIV></TD></TR>
+        <TR style="min-height: 138px;">
+          <TD>
+            <DIV style="margin-bottom: 12pt;"><FONT face="Times New Roman" 
+            style="font-size: 12pt;"><STRONG>By Bus:</STRONG></FONT></DIV></TD>
+          <TD>
+            <DIV><FONT face="Arial"><FONT face="Times New Roman" style="font-size: 12pt;">Bx4, 
+            Bx4A </FONT><FONT face="Times New Roman" 
+            style="font-size: 12pt;">–</FONT><FONT face="Times New Roman" style="font-size: 12pt;"> 
+            Westchester Avenue / Tiffany Street;</FONT><FONT face="Times New Roman" 
+            style="font-size: 12pt;">&nbsp;</FONT></FONT></DIV>
+            <DIV><FONT face="Arial"><FONT face="Times New Roman" style="font-size: 12pt;">Bx5 
+            </FONT><FONT face="Times New Roman" 
+            style="font-size: 12pt;">–</FONT><FONT face="Times New Roman" style="font-size: 12pt;"> 
+            Hunts Point Avenue / Bruckner Boulevard</FONT><FONT face="Times New Roman" 
+            style="font-size: 12pt;">;</FONT></FONT></DIV>
+            <DIV><FONT face="Arial"><FONT face="Times New Roman" style="font-size: 12pt;">Bx6 
+            </FONT><FONT face="Times New Roman" 
+            style="font-size: 12pt;">–</FONT><FONT face="Times New Roman" style="font-size: 12pt;"> 
+            Hunts Point Avenue / Lafayette Avenue</FONT><FONT style="font-size: 12pt;">;</FONT></FONT></DIV>
+            <DIV><FONT face="Arial"><FONT face="Times New Roman" style="font-size: 12pt;">Bx19 
+            </FONT><FONT face="Times New Roman" 
+            style="font-size: 12pt;">–</FONT><FONT face="Times New Roman" style="font-size: 12pt;"> 
+            Southern Boulevard / Tiffany Street;</FONT><FONT face="Times New Roman" 
+            style="font-size: 12pt;">&nbsp; </FONT></FONT></DIV>
+            <DIV><FONT face="Arial"><FONT face="Times New Roman" style="font-size: 12pt;">Bx46 
+            </FONT><FONT face="Times New Roman" 
+            style="font-size: 12pt;">–</FONT><FONT face="Times New Roman" style="font-size: 12pt;"> 
+            Longwood Avenue / Southern 
+        Boulevard.</FONT></FONT></DIV></TD></TR></TBODY></TABLE></DIV>
+      <DIV align="right"><STRONG><FONT face="Times New Roman" size="3">Page 2 of 
+      2</FONT></STRONG></DIV></TD></TR></TBODY></TABLE></DIV></BODY></HTML>
