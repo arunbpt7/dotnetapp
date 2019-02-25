@@ -1,6 +1,6 @@
 ## Dokcerfile for build app located in source2 directory 
 
-FROM microsoft/dotnet:sdk AS build-env
+FROM microsoft/dotnet:sdk
 ENV http_proxy=http://sunproxy.ux.hra.nycnet:3128
 ENV https_proxy=http://sunproxy.ux.hra.nycnet:3128
 
