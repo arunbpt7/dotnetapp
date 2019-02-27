@@ -36,7 +36,7 @@ pipeline {
  
      stage('Deploy the docker image in kubernetes') {
        steps{
-         sh (" kubectl create -f k8s.yaml")
+         sh (" kubectl apply -f k8s.yaml")
        }
      }
    }
