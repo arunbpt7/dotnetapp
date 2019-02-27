@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: dontnettest
-        image: arunbpt7/arunbpt7/dotnetcore:latest
+        image: arunbpt7/dotnetcore:latest
         ports:
         - containerPort: 80
 ---
