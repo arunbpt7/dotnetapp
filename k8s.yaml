@@ -1,0 +1,47 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: dontnettest
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: dontnettest
+  template:
+    metadata:
+      labels:
+        app: dontnettest
+    spec:
+      containers:
+      - name: dontnettest
+        image: arunbpt7/arunbpt7/dotnetcore:latest
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: dontnettest-svc
+spec:
+  ports:
+  - port: 80
+    targetPort: 80
+    protocol: TCP
+    name: http
+  selector:
+    app: dontnettest
+
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: dontnettest-ingress
+spec:
+  rules:
+  - host: dontnettest.test.k8s.ux.hra.nycnet
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: dontnettest-svc
+          servicePort: 80
