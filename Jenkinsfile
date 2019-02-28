@@ -44,7 +44,7 @@ pipeline {
      }       
  
    
-      stage('Deploy the docker image in kubernetes') {
+      stage('APP Deployment on TEST ENV | Kubernetes ') {
          input {
            message "Approve Deployment?"
          }
