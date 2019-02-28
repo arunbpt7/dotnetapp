@@ -22,7 +22,7 @@ pipeline {
      post {
          failure {
             step {
-              emailext body:', subject: 'Failed', to: 'babuar@dss.nyc.gov'
+              emailext body:'', subject: 'Failed', to: 'babuar@dss.nyc.gov'
               
        }
     }
