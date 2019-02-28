@@ -34,16 +34,16 @@ pipeline {
      }
      
      stage('Send email') {
-    def mailRecipients = "babuar@dss.nyc.gov"
-    def jobName = "App build and Docker Image push has been completed"
+         def mailRecipients = "babuar@dss.nyc.gov"
+         def jobName = "App build and Docker Image push has been completed"
 
-    emailext body: '''${SCRIPT, template="groovy-html.template"}''',
-        mimeType: 'text/html',
-        subject: "[Jenkins] ${jobName}",
-        to: "${mailRecipients}",
-        replyTo: "${mailRecipients}",
-        recipientProviders: [[$class: 'CulpritsRecipientProvider']]
-}
+         emailext body: '''${SCRIPT, template="groovy-html.template"}''',
+             mimeType: 'text/html',
+             subject: "[Jenkins] ${jobName}",
+             to: "${mailRecipients}",
+             replyTo: "${mailRecipients}",
+             recipientProviders: [[$class: 'CulpritsRecipientProvider']]
+    }
    
       stage('Deploy the docker image in kubernetes') {
        steps{
