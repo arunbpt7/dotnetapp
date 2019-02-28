@@ -18,7 +18,7 @@ pipeline {
             
          }
        }
-     }
+     
      post {
          failure {
             mail to:'babuar@dss.nyc.gov'
@@ -32,7 +32,7 @@ pipeline {
             }
          }
       }
-      
+    }  
       
          
            
