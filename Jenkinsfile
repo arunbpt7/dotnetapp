@@ -22,7 +22,7 @@ pipeline {
       post {
          failure {
             mail to:'babuar@dss.nyc.gov'
-            subject: Failed Build: ${currentBuild.fullDisplayName}"
+            subject: "Failed Build: ${currentBuild.fullDisplayName}"
       }
          
          success {
