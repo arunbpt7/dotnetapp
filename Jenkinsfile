@@ -37,7 +37,7 @@ pipeline {
          def mailRecipients = "babuar@dss.nyc.gov"
          def jobName = "App build and Docker Image push has been completed"
 
-         emailext body: '''${SCRIPT, template="groovy-html.template"}''',
+         emailtext body: '''${SCRIPT, template="groovy-html.template"}''',
              mimeType: 'text/html',
              subject: "[Jenkins] ${jobName}",
              to: "${mailRecipients}",
