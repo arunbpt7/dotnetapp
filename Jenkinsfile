@@ -29,9 +29,7 @@ pipeline {
          
          success {
             step {
-              if (currentBuild.previousBuild != null && currentBuild.previousBuild.result != 'SUCCESS') {
-                 mail to: 'babuar@dss.nyc.gov'
-                 subject: "Pipeline Success: ${currentBuild.fullDisplayName}"
+              emailext body:'', subject: 'success', to: 'babuar@dss.nyc.gov'
                  
               }  
             }
