@@ -34,8 +34,11 @@ pipeline {
      }
      
      stage('Send email') {
+        steps{
          emailext body: '', subject: 'App build and Docker Image push has been completed', to: 'babuar@dss.nyc.gov'
-    }
+       }
+     }       
+ 
    
       stage('Deploy the docker image in kubernetes') {
        steps{
