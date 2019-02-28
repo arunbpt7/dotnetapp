@@ -45,10 +45,10 @@ pipeline {
  
    
       stage('APP Deployment on TEST ENV | Kubernetes ') {
-         input "Approve Deployment?"
+         input message:"Approve Deployment?", ok: "OK"
                     
        steps{
-         echo " Continue"
+         
          sh (" kubectl apply -f test_k8s.yaml")
        }
      }
