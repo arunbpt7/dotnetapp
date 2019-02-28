@@ -19,8 +19,8 @@ pipeline {
          }
        }
      }
-          
-         
+      
+        
            
      stage('Deploy Image') {
        steps{
@@ -48,10 +48,9 @@ pipeline {
          input {
            message "Approve Deployment?"
           }
-         steps {
-            echo " Continue"
-         }
+         
        steps{
+         echo " Continue"
          sh (" kubectl apply -f test_k8s.yaml")
        }
      }
