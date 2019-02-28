@@ -21,14 +21,19 @@ pipeline {
      
      post {
          failure {
-            mail to:'babuar@dss.nyc.gov'
+            step {
+              mail to:'babuar@dss.nyc.gov'
             subject: "Failed Build: ${currentBuild.fullDisplayName}"
-      }
+       }
+    }
          
          success {
-            if (currentBuild.previousBuild != null && currentBuild.previousBuild.result != 'SUCCESS') {
-               mail to: 'babuar@dss.nyc.gov'
-               subject: "Pipeline Success: ${currentBuild.fullDisplayName}"
+            step {
+              if (currentBuild.previousBuild != null && currentBuild.previousBuild.result != 'SUCCESS') {
+                 mail to: 'babuar@dss.nyc.gov'
+                 subject: "Pipeline Success: ${currentBuild.fullDisplayName}"
+                 
+              }  
             }
          }
       }
