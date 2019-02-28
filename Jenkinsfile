@@ -46,7 +46,7 @@ pipeline {
    
       stage('Deploy the docker image in kubernetes') {
          input {
-              message:'Approve Deployment?'
+           message "Approve Deployment?"
          }
        steps{
          sh (" kubectl apply -f k8s.yaml")
