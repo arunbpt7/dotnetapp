@@ -21,14 +21,14 @@ pipeline {
      
      post {
          failure {
-            step {
+            step{
               emailext body:'', subject: 'Failed', to: 'babuar@dss.nyc.gov'
               
        }
     }
          
          success {
-            step {
+            step{
               emailext body:'', subject: 'success', to: 'babuar@dss.nyc.gov'
                  
               }  
