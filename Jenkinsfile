@@ -35,7 +35,7 @@ pipeline {
      
      stage('Send email') {
         steps{
-         emailext body: '', subject: 'App build and Docker Image push has been completed', to: 'babuar@dss.nyc.gov'
+         emailext body: 'Build and Docker image Push has been completed sucecsfully ', subject: 'Jenkins |  App Build and Docker Image Push |Success  ', to: 'babuar@dss.nyc.gov'
        }
      }       
  
