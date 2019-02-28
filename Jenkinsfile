@@ -18,23 +18,7 @@ pipeline {
             
          }
        }
-     
-     post {
-         failure {
-            step{
-              emailext body:'', subject: 'Failed', to: 'babuar@dss.nyc.gov'
-              
-       }
-    }
-         
-         success {
-            step{
-              emailext body:'', subject: 'success', to: 'babuar@dss.nyc.gov'
-                 
-              }  
-            }
-         }
-      }
+     }
           
          
            
