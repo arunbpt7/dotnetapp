@@ -15,7 +15,11 @@ pipeline {
        steps{
          script {
            dockerImage = docker.build registry + ":latest"
-            post {
+            
+         }
+       }
+     }
+      post {
                failure {
                   mail to: 'babuar@dss.nyc.gov'
                         subject: "Failed Building image: ${currentBuild.fullDisplayName}"
@@ -27,9 +31,7 @@ pipeline {
                }
              } 
            }
-         }
-       }
-     }
+      
      stage('Deploy Image') {
        steps{
          script {
