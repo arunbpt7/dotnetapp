@@ -49,7 +49,7 @@ pipeline {
            message "Approve Deployment?"
          }
        steps{
-         sh (" kubectl apply -f k8s.yaml")
+         sh (" kubectl apply -f test_k8s.yaml")
        }
      }
    }
