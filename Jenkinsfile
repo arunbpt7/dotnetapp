@@ -23,11 +23,11 @@ pipeline {
                success {
                   mail to: 'babuar@dss.nyc.gov'
                        subject: "success Building image: ${currentBuild.fullDisplayName}"
+                 }
                }
-            }
-          } 
-        }
-       }
+             } 
+           }
+         }
        }
      }
      stage('Deploy Image') {
