@@ -19,7 +19,7 @@ pipeline {
          }
        }
      }
-      post {
+     post {
          failure {
             mail to:'babuar@dss.nyc.gov'
             subject: "Failed Build: ${currentBuild.fullDisplayName}"
