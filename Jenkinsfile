@@ -45,9 +45,9 @@ pipeline {
  
    
       stage('APP Deployment on TEST ENV | Kubernetes ') {
-         input {
+         input{
             message "Approve Deployment?"
-            ok "Yes"
+            submitter "admin"
          }
                     
        steps{
