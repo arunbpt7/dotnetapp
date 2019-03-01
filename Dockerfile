@@ -12,7 +12,8 @@ COPY source2/. ./
 RUN dotnet publish -c Release -o out
 
 
-FROM microsoft/dotnet:aspnetcore-runtime
+#FROM microsoft/dotnet:aspnetcore-runtime
+FROM aspnetcore-runtime-base:v2
 ENV http_proxy=http://sunproxy.ux.hra.nycnet:3128
 ENV https_proxy=http://sunproxy.ux.hra.nycnet:3128
 WORKDIR /app
