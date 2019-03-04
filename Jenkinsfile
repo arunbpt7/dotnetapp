@@ -50,7 +50,7 @@ pipeline {
          }                          
        steps{
          
-         sh (" kubectl apply -f test_k8s.yaml")
+         sh (" kubectl delete -f test_k8s.yaml;kubectl apply -f test_k8s.yaml")
        }
      }
    }
