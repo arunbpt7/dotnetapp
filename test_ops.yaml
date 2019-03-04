@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: dontnetprod
-        image: arunbpt7/dotnetcore:latest
+        image: 'arunbpt7/dotnetcore:latest'
         ports:
         - containerPort: 80
 ---
@@ -38,7 +38,7 @@ metadata:
   name: dontnetprod-ingress
 spec:
   rules:
-  - host: dontnetprod.test.k8s.ux.hra.nycnet
+  - host: dontnetprod.apps.ux.hra.nycnet
     http:
       paths:
       - path: /
