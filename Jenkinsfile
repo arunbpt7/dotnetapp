@@ -58,7 +58,7 @@ pipeline {
         steps{
          
            
-         emailext body: 'Application has been deployed  and available through "http://dontnetprod.apps.ux.hra.nycnet" ', subject: 'Jenkins | completed  | Success  ', to: 'babuar@dss.nyc.gov'
+         emailext body: 'Application has been deployed  and available through "http://dontnettest.apps.ux.hra.nycnet" ', subject: 'Jenkins | completed  | Success  ', to: 'babuar@dss.nyc.gov'
        }
      }       
    }
