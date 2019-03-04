@@ -39,7 +39,7 @@ pipeline {
      
      stage('Email Notification' ) {
         steps{
-         emailext body: 'Build and Docker Push has been completed sucecsfully and application is ready to deploy on TEST ENV ', subject: 'Jenkins | App Build and Docker Image Push | Success  ', to: 'babuar@dss.nyc.gov'
+         emailext body: 'Build has been completed and application is ready to deploy on  Openshift TEST ENV ', subject: 'Jenkins | App Build and Docker Image Push | Success  ', to: 'babuar@dss.nyc.gov'
        }
      }       
  
@@ -58,7 +58,7 @@ pipeline {
         steps{
          
            
-         emailext body: 'Application has been deployed  and accesible through "http://dontnetprod.apps.ux.hra.nycnet" ', subject: 'Jenkins | completed  | Success  ', to: 'babuar@dss.nyc.gov'
+         emailext body: 'Application has been deployed  and available through "http://dontnetprod.apps.ux.hra.nycnet" ', subject: 'Jenkins | completed  | Success  ', to: 'babuar@dss.nyc.gov'
        }
      }       
    }
