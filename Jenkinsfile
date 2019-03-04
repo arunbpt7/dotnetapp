@@ -57,7 +57,7 @@ pipeline {
       stage('Deployment completion  ' ) {
         steps{
          
-           sh ("kubectl --kubeconfig /var/jenkins_home/config_openshift get ingress dontnetprod-ingress  -n test | awk '{print $2}' >  hosts ;cat hosts
+           sh ("kubectl --kubeconfig /var/jenkins_home/config_openshift get ingress dontnetprod-ingress  -n test | awk '{print $2}' >  hosts ;cat hosts")
          emailext body: 'Application deployment has been compleled ', subject: 'Jenkins | Deploymemnt has completed  | Success  ', to: 'babuar@dss.nyc.gov'
        }
      }       
