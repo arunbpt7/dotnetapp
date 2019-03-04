@@ -11,7 +11,7 @@ pipeline {
          git 'https://github.com/arunbpt7/dotnetapp.git'
        }
      }
-     stage('Building image') {
+     stage('Building App image') {
        steps{
          script {
            dockerImage = docker.build registry + ":latest"
@@ -22,7 +22,7 @@ pipeline {
       
         
            
-     stage('Deploy Image') {
+     stage('Deploy Image to docker registry ') {
        steps{
          script {
            docker.withRegistry( '', registryCredential ) {
