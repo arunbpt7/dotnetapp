@@ -44,7 +44,7 @@ pipeline {
      }       
  
                 
-      stage('APP Deployment on TEST ENV | Kubernetes ') {
+      stage('APP Deployment on TEST ENV | OpenShift ') {
          input{
              message "Approve Deployment?"
          }                          
