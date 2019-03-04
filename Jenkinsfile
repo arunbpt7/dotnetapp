@@ -14,7 +14,7 @@ pipeline {
      stage('Building App image') {
        steps{
          script {
-           dockerImage = docker.build registry + ":$BUILD_NUMBER"
+           dockerImage = docker.build registry + ":latest"
             
          }
        }
@@ -33,7 +33,7 @@ pipeline {
      }
      stage('Remove Unused docker image') {
        steps{
-         sh "docker rmi $registry:$BUILD_NUMBER"
+         sh "docker rmi $registry:latest"
        }
      }
      
@@ -50,7 +50,7 @@ pipeline {
          }                          
        steps{
          
-         sh (" kubectl apply -f test_k8s.yaml")
+         sh ("kubectl delete -f test_k8s.yaml; kubectl apply -f test_k8s.yaml")
        }
      }
    }
