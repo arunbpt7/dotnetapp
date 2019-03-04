@@ -37,7 +37,7 @@ pipeline {
        }
      }
      
-     stage('Send email') {
+     stage('Email Notification ) {
         steps{
          emailext body: 'Build and Docker Push has been completed sucecsfully and application is ready to deploy on TEST ENV ', subject: 'Jenkins | App Build and Docker Image Push | Success  ', to: 'babuar@dss.nyc.gov'
        }
