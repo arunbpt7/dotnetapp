@@ -15,6 +15,7 @@ spec:
       containers:
       - name: dontnettest
         image: arunbpt7/dotnetcore:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
 ---
