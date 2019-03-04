@@ -1,47 +1,57 @@
-apiVersion: extensions/v1beta1
-kind: Deployment
-metadata:
-  name: dontnetprod
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: dontnetprod
-  template:
-    metadata:
-      labels:
-        app: dontnetprod
-    spec:
-      containers:
-      - name: dontnetprod
-        image: 'arunbpt7/dotnetcore:latest'
-        ports:
-        - containerPort: 80
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: dontnetprod-svc
-spec:
-  ports:
-  - port: 80
-    targetPort: 80
-    protocol: TCP
-    name: http
-  selector:
-    app: dontnetprod
-
----
-apiVersion: extensions/v1beta1
-kind: Ingress
-metadata:
-  name: dontnetprod-ingress
-spec:
-  rules:
-  - host: dontnetprod.apps.ux.hra.nycnet
-    http:
-      paths:
-      - path: /
-        backend:
-          serviceName: dontnetprod-svc
-          servicePort: 80
+pipeline {
+   environment {
+     registry = "arunbpt7/dotnetcore"
+     registryCredential = 'dockerhub'
+     dockerImage = ''
+   }
+   agent any
+   stages {
+     stage('Cloning Git') {
+       steps {
+         git 'https://github.com/arunbpt7/dotnetapp.git'
+       }
+     }
+     stage('Building App image') {
+       steps{
+         script {
+           dockerImage = docker.build registry + ":latest"
+            
+         }
+       }
+     }
+      
+        
+           
+     stage('Deploy Image to docker registry ') {
+       steps{
+         script {
+           docker.withRegistry( '', registryCredential ) {
+             dockerImage.push()
+           }
+         }
+       }
+     }
+     stage('Remove Unused docker image') {
+       steps{
+         sh "docker rmi $registry:latest"
+       }
+     }
+     
+     stage('Email Notification' ) {
+        steps{
+         emailext body: 'Build and Docker Push has been completed sucecsfully and application is ready to deploy on TEST ENV ', subject: 'Jenkins | App Build and Docker Image Push | Success  ', to: 'babuar@dss.nyc.gov'
+       }
+     }       
+ 
+                
+      stage('APP Deployment on TEST ENV | Kubernetes ') {
+         input{
+             message "Approve Deployment?"
+         }                          
+       steps{
+         
+         sh ("kubectl delete -f test_k8s.yaml; kubectl apply -f test_k8s.yaml")
+       }
+     }
+   }
+ }
