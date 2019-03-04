@@ -1,0 +1,47 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: dontnetprod
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dontnetprod
+  template:
+    metadata:
+      labels:
+        app: dontnetprod
+    spec:
+      containers:
+      - name: dontnetprod
+        image: 'arunbpt7/dotnetcore:latest'
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: dontnetprod-svc
+spec:
+  ports:
+  - port: 80
+    targetPort: 80
+    protocol: TCP
+    name: http
+  selector:
+    app: dontnetprod
+
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: dontnetprod-ingress
+spec:
+  rules:
+  - host: dontnetprod.apps.ux.hra.nycnet
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: dontnetprod-svc
+          servicePort: 80
